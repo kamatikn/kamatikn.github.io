@@ -1,0 +1,810 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+		<script src="https://waph-uc.github.io/clock.js"></script>
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Kalyan Kamati</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+	
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQXRGXMXR7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-TQXRGXMXR7');
+		</script>
+		
+
+    </head>
+	
+	<body onload="displayWelcomeMessage()">
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">kamati kalyan</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#education">Education</a></li>
+			                    <li class="smooth-menu"><a href="#skills">Skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience">Experience</a></li>
+			                    <li class="smooth-menu"><a href="#profiles">Projects & Workshops</a></li>              
+			                    <li class="smooth-menu"><a href="#clients">Acheivements</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+								
+									<li class="smooth-menu">
+										<div id="weatherDisplay" style="width: 80px; padding-top: 43%;"> <!-- Adjust the width inline -->
+											<!-- Weather icon will be inserted here dynamically -->
+										</div>
+									</li>
+								
+							    
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+		
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<div>
+								<p id="welcomeMessage"></p>
+							</div>
+							<h2>hi <span>,</span> i am <br> kalyan </h2>
+							<p>Application Developer</p>
+							<a href="assets/download/Kalyan Kamati Full timeJob Resume latest.pdf" download>download resume</a>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>about me</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+									Hello there, my name is kalyan kamati, 
+									a passionate and skilled IT professional, currently 
+									pursuing a Master's in Information Technology from 
+									the University of Cincinnati.
+								</h3>
+								<p>
+									I have 2 years of experience as an Application Developer at Accenture, where I was involved with the development of a cutting-edge Chatbot application. My role involved in utilizing .NET framework, Node JS, and Postman, ensuring optimal functionality and a seamless user experience. Also, I was Engaged in agile methodologies where I collaborated with cross-functional teams, addressing complex challenges, and delivering robust solutions. My proficiency extends to Azure storage explorer and SQL, and I am adept at integrating RESTful APIs for seamless data exchange.
+								</p>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>phone</h3>
+											<p>513-348-7002</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Email</h3>
+											<p>kamatikn@mail.uc.edu</p>
+										</div>
+									</div>
+									
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>website</h3>
+											<p>kamatikn.github.io</p>
+											
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>	
+										<li>
+											
+											<a href="https://www.linkedin.com/in/kalyan-kamati/">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											
+											<a href="https://github.com/kamatikn">
+												<i  class="fa flaticon-github-logo" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-instagram" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										
+										
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>education</h2>
+			</div>
+			
+			<div class="container">
+				<div class="education-horizontal-timeline">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2023 - 2025 [expected graduation date]</h2>
+									<h3>Masters, <span>Major: </span> Information Technology</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											University of Cincinnati
+										</h4>
+										<h5>Ohio, USA</h5>
+										<p class="description">
+											Currently in my second semester pursuing a Master's in Information Technology, I uphold a perfect 4.0 GPA from my first term. Continuously advancing, I focus on advanced subjects like <a href="waph.html" class="description" style="font-size: 15px;"> Web application programming and hacking</a>, cybersecurity principles, mobile app technologies, and human-computer interaction. With each course, I deepen my expertise, poised to excel in the dynamic IT landscape and contribute effectively to future technological innovations.
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2017 - 2021</h2>
+									<h3>Bachelors, <span>Major: </span> Information Technology</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Gurunanak Institutions Tech Campus.
+										</h4>
+										<h5>Hyderabad, India</h5>
+										<p class="description">
+											During my undergraduate studies in Information Technology, I maintained a commendable GPA of 7.96 out of 10, reflecting my dedication to academic success. A highlight of my undergraduate journey was my major project, where I spearheaded the development of a chat application. This project not only showcased my technical prowess but also enhanced my collaborative and problem-solving skills. 
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.education-->
+		<!--education end -->
+
+		<!--skills start -->
+		<section id="skills" class="skills">
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>Technical skills</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">c#</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+													  
+												</div>
+											</div>
+											<h3>75%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Java</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>60%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Python</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>60%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">.NET FramWork</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>70%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">html 5</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													
+												</div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">css 3 animation</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">JavaScript</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>60%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<!-- /.barWrapper -->
+								</div>
+							</div>
+						</div><!-- /.row -->
+					</div>	<!-- /.container -->		
+				</div><!-- /.skill-content-->
+
+		</section><!--/.skills-->
+		<!--skills end -->
+
+		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+
+							
+									<h3>Application Developer <span class="experiencetime">August 2021 - July 2023</span></h3>
+									<div>Accenture Solutions</div>
+									<p class="aboutme">During my tenure, I led the development of a Chatbot application utilizing a diverse tech stack including .NET framework (MVC), Node JS, and Postman, with integration of Qlik, Azure storage explorer SQL to ensure optimal user experiences. Engaged in agile methodologies, I facilitated daily stand-ups, sprint planning, and retrospectives for iterative enhancements. Collaborating closely with cross-functional teams, I gathered requirements and designed robust solutions to tackle complex challenges. Leveraging Qlik Sense, I generated graphs and visualizations for comprehensive leadership reporting. Furthermore, I seamlessly integrated RESTful APIs and third-party services to facilitate data exchange and enhance functionality, demonstrating a commitment to innovation and excellence in software development.
+								    </p>
+								
+								
+							
+							
+							
+										
+					</div><!--.experience-content-->
+			</div>
+
+		</section><!--/.experience-->
+		<!--experience end -->
+
+		<!--profiles start -->
+		<section id="profiles" class="profiles">
+			<div class="profiles-details">
+				<div class="section-heading text-center">
+					<h2>Projects & Workshops</h2>
+				</div>
+				<div class="container">
+					<div class="profiles-content">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<i class="flaticon-themeforest"></i>
+										<div class="profile-icon-name">DiPA Chatbot</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="flaticon-themeforest"></i>
+											<br>
+											<div class="profile-icon-name" style="font-size: small;"> 
+												Developed a Chatbot application using .NET framework (MVC), Node JS, and Postman, Qlik, Azure storage explorer SQL ensuring smooth functionality and optimal user experiences.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<i class="flaticon-dribbble"></i>
+										<div class="profile-icon-name">MAD Project</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="flaticon-dribbble"></i>
+											<br>
+											<div class="profile-icon-name" style="font-size: small;">•	Created a mobile application from scratch for building a secure messaging app.<br>
+												•	Developed application using Android studio and firebase.
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<i class="flaticon-github-logo"></i>
+										<div class="profile-icon-name">personal Projects</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<i class="flaticon-github-logo"></i>
+											<br>
+											<div class="profile-icon-name" style="font-size: small;">Created a webiste displaying my portfolio and hosted it via github. Here is the link: kamati.github.io</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>	
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.profiles-->
+		<!--profiles end -->
+
+		<!--clients start -->
+		<section id="clients" class="clients">
+			<div class="section-heading text-center">
+				<h2>Acheivements and Certificates</h2>
+			</div>
+			<div class="clients-area">
+				<div class="container">
+					
+						<ul class="fa-ul mb-0">
+							<li>
+							  <i class="fa-li fa fa-trophy text-warning"></i>
+							  Azure fundamentals-<a href="https://learn.microsoft.com/en-us/users/kalyankamati-9995/credentials/50a17104d468e450"> Microsoft Certification</a> [July 2022].</li>
+							<li>
+							  <i class="fa-li fa fa-trophy text-warning"></i>
+							  Certificate of excellency earned on web development internship in JOHAN BROWN company.</li>
+							<li>
+						  </li></ul>
+					<!--/.owl-carousel-->
+				</div><!--/.container-->
+			</div><!--/.clients-area-->
+
+		</section><!--/.clients-->
+
+		</section><!--/.clients-->
+		<!--clients end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+		
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form id="contactForm">
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="name" placeholder="Name*" name="name" required>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email" required>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" required></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<button type="submit" class="contact-btn">Submit</button>
+													<span id="successMessage" class="hidden">Your message has been sent successfully!</span>
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>Kalyan Kamati</h3>
+										<p>Application Developer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>513-348-7002</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p id="email1" onclick="showhideEmail()">show my email</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>kamatikn.github.io</p>
+											<div class="single-contact-add-info">
+												<br>
+												<div id="root"></div>
+												<canvas id="analog-clock" width="120" height="120"></canvas>
+											</div>
+										</div>
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="https://www.linkedin.com/in/kalyan-kamati/">
+											<i  class="fa fa-linkedin" aria-hidden="true"></i>
+										</a></li><!--/li-->
+		
+										<li><a href="https://github.com/kamatikn">
+											<i  class="fa flaticon-github-logo" aria-hidden="true"></i>
+										</a></li><!--/li-->
+										<li><a href="#">
+											<i  class="fa fa-instagram" aria-hidden="true"></i>
+										</a></li><!--/li-->
+		
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+		
+		</section><!--/.contact-->
+		
+		
+		
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						<div id="response1"></div>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/main.edf8ac75.js"></script>
+		<script>
+			// Get a reference to the root div
+			const rootElement = document.getElementById('root');
+		
+			// Render your React component inside the root div
+			ReactDOM.render(React.createElement(DigitalClock), rootElement);
+		</script>
+		<script src="assets/js/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+		
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("contactForm").addEventListener("submit", function (event) {
+				event.preventDefault(); // Prevent form from submitting
+				// Perform form validation
+				let name = document.getElementById("name").value.trim();
+				let email = document.getElementById("email").value.trim();
+				let subject = document.getElementById("subject").value.trim();
+				let message = document.getElementById("comment").value.trim();
+
+				if (name === "" || email === "" || message === "") {
+					alert("Please fill in all required fields.");
+					return;
+				}
+
+				// You can add additional validation rules here if needed
+
+				// If all validation passes, show success message
+				alert("data submitted successfully");
+				// You can also reset the form here if needed
+				// document.getElementById("contactForm").reset();
+			});
+		});
+      </script>
+		
+		<script>
+			var shown = false;
+function showhideEmail(){
+	if (shown) {
+		document.getElementById('email1').innerHTML="show my email";
+		shown = false;
+	}
+	else {
+		var myemail= "<a href='mailto:kamatikn"+"@"+"mail.uc.edu'>kamatikn"+ "@"+"mail.uc.edu</a>";
+		document.getElementById('email1').innerHTML=myemail;
+		shown = true;
+
+	}
+
+}
+var canvas= document.getElementById("analog-clock");
+	var ctx=canvas.getContext("2d");
+	var radius= 150/2;
+	ctx.translate(radius, radius);
+	radius=radius * 0.58;
+	setInterval(drawClock, 1000);
+	function drawClock(){
+		drawFace(ctx, radius);
+		drawNumbers(ctx, radius);
+		drawTime(ctx, radius);
+	}	
+
+function fetchNewJoke() {
+        $.get("https://v2.jokeapi.dev/joke/Programming?type=single", function(result) {
+            if (result && result.joke) {
+                console.log("from jokeapi:" + JSON.stringify(result));
+                $("#response1").html("Programming joke of the day: " + result.joke);
+            } else {
+                $("#response1").text("Could not retrieve a joke at this time");
+            }
+        });
+    }
+	fetchNewJoke();
+	setInterval(fetchNewJoke, 60000);
+	function fetchWeather() {
+        // Make a GET request to the Weatherbit API
+        $.get("https://api.weatherbit.io/v2.0/current?city=Cincinnati&key=5d55d3bd2a3844f0a658a05b4d977cee", function(response) {
+            // Check if response is successful and contains weather data
+            if (response && response.data && response.data.length > 0) {
+                // Extract weather data from the response
+                var weatherData = response.data[0];
+                var temperature = weatherData.temp;
+                var description = weatherData.weather.description;
+                var iconCode = weatherData.weather.icon;
+
+                var weatherIcon = "<img src='https://www.weatherbit.io/static/img/icons/" + iconCode + ".png' alt='" + description + "' style='width: 25px;'>";
+                $("#weatherDisplay").html( weatherIcon + temperature + "°C");
+            } else {
+                // Display an error message if weather data is not available
+                $("#weatherDisplay").html("<p>Failed to fetch weather information.</p>");
+            }
+        }).fail(function() {
+            // Display an error message if the request fails
+            $("#weatherDisplay").html("<p>Failed to fetch weather information.</p>");
+        });
+    }
+
+    // Call fetchWeather() function to display weather information on page load
+    fetchWeather();
+	
+	
+        // Function to set a cookie with a given name, value, and expiration date
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Function to get the value of a cookie by its name
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Function to display the welcome message based on cookie
+        function displayWelcomeMessage() {
+            var lastVisit = getCookie("lastVisit");
+            var welcomeMessage = document.getElementById("welcomeMessage");
+            if (lastVisit) {
+                welcomeMessage.innerText = "Welcome back! Your last visit was " + lastVisit;
+            } else {
+                var currentDate = new Date().toUTCString();
+                setCookie("lastVisit", currentDate, 365); // Set cookie for 1 year
+                welcomeMessage.innerText = "Welcome to my Profile!";
+            }
+        }
+    
+
+		</script>
+		
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
